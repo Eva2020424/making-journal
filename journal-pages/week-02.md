@@ -95,88 +95,75 @@ The challenge is to translate your **hand-drawn data portrait** into something a
 
 ---
 
-## Step 1: Translate Your Data Drawing into Code
+## Step 1: Translate Data Drawing into Code
 
-Look at the data you collected by hand last week.
+My first goal was simply to translate the data I collected in Experiment 1 into a digital form using p5.js. In my hand-drawn data portrait, each circle represented a day and the small coloured marks around the edge represented moments when I reached for my phone. The position of each mark corresponded to the time of day, while the colour represented my emotional state.
 
-Consider:
-- Which values are **numeric**
-- Which are **categories**
-- Which are **qualitative or difficult to quantify**
+In the prototype, I focused on reproducing this structure in code. I created a circular clock-like layout and plotted points around the circle according to the time value of each moment. At this stage the sketch was mostly static and served as a direct translation of the original drawing rather than an interactive visualization.
 
-You do not need to represent everything.  
-Choose the aspects of your data drawing that are **most interesting to make interactive**.
+<iframe 
+  src="https://editor.p5js.org/eren841/full/6rqbYGTff"
+  width="500"
+  height="560">
+</iframe>
+
+In my dataset, the time values are numeric, so they can be directly used as numerical data in the code. I recorded each moment as an object, for example:
+
+{ time: 10.1, feeling: "neutral", action: "check notification" }  
+{ time: 11.0, feeling: "neutral", action: "scrolling" }
+
+The time values allow the sketch to calculate positions around the circular clock structure by mapping the time to an angle.
+
+Emotions function as categorical data. Instead of storing them as numbers, I used different colours to represent each emotional category. A function such as `feelingColor(f)` assigns a specific colour to each emotion (for example boredom, neutral, upset, happiness, or curious), which makes it easier to visually distinguish emotional states.
+
+The actions (such as watching videos, chatting, or gaming) are more qualitative and difficult to quantify numerically. Because of this, they are stored as text labels and displayed as descriptive information when the viewer hovers over a data point.
 
 ---
 
-## Step 2: Design Your Interactive Visualisation
+## Step 2: Design Interactive Visualisation
 
-Create a p5.js sketch that includes **interactive elements** allowing the viewer to explore your data.
+After translating the structure of the drawing into code, I began exploring ways to make the visualization more interactive. I added several DOM controls so that viewers could manipulate what they see.
 
-Use DOM elements such as:
+Buttons allow the viewer to switch between the four recorded days, while checkboxes filter different emotional states. I also added sliders that limit the visible time range, allowing viewers to focus on particular parts of the day.
 
-- buttons
-- sliders
-- text inputs
-- dropdowns
-- checkboxes
-
-These controls should allow the viewer to **change or manipulate what they see**.
-
-### Consider
-
-- What can interaction reveal that your hand-drawn portrait could not?
-- How do your controls relate to the structure of your data?
-- What happens when the viewer changes something?
-- Is the response **immediate, gradual, or surprising**?
-
-Use the p5.js reference and tutorials to learn new techniques.
+These interactions allow the viewer to actively explore the patterns in the data rather than simply observing a static image. For example, viewers can compare different days, isolate specific emotions, or examine when certain behaviours occur.
 
 ---
 
 ## Step 3: Iterate
 
-Test your sketch.
+Through several iterations I refined both the visual design and the interaction. One change was removing the adjustable dot-size control, because it did not represent a meaningful data variable, it was there simply because I thought more slidebars and interactive DOM buttons are good, but my friend says it was redundant, and I agreed. Now, all data points were placed consistently along the centre of the circular ring to create a cleaner visual structure.
 
-Show it to someone else and observe how they use it.
+I also redesigned the circular background using a colour gradient that transitions from warm yellow tones to dark blue. This visually represents the passage from daytime to nighttime and helps viewers intuitively understand the temporal structure of the data.
 
-Refine the interaction based on what you observe.
+Finally, I added controls that allow users to add or remove moments from the dataset through input fields and buttons. This makes the sketch more interactive by allowing viewers to experiment with how additional moments would appear within the daily cycle.
 
----
-
-# Document Your Process
-
-Each entry in the Making Journal should include **visual and textual evidence**, such as:
-
-- sketches
-- screenshots
-- GIFs
-- diagrams
-- process notes
-- instructions
-- reflections
+<iframe 
+  src="https://editor.p5js.org/eren841/full/jm9nQ_wnk"
+  width="700"
+  height="700">
+</iframe>
 
 ---
 
-## Reflection Questions
+## Reflection
 
-Address the following questions in your journal:
+From my Experiment 1 data portrait, I chose to focus on three main aspects: the time of each moment, the emotional state, and the activity that caused me to reach for my phone. Time values were used as numeric data to position points around the circular clock structure, while emotions were represented through colour categories.
 
-- What data and visual aspects from Experiment 1 did you choose to work with, and why?
-- How did you decide which interactive elements to use?
-- What can a viewer learn by interacting with your sketch that they could not from the hand-drawn portrait?
-- Did you use vibe coding or other tools in your process? What did you learn from this?
-- What would you develop further with more time?
-- Any other reflections?
-## Images & Media
+To make the visualization interactive, I added DOM controls such as buttons to switch between different days, checkboxes to filter emotional states, and sliders to adjust the visible time range. I also added input fields and buttons that allow viewers to add or remove moments from the dataset.
 
-*Use the format below to embed images from your assets folder:*
+Through interaction, viewers can explore patterns that are harder to notice in the hand-drawn portrait, such as when certain emotions occur or how frequently I check my phone at different times of day. Hover interactions also reveal additional details about each moment.
 
-`![Alt text](../assets/week-01/your-image.jpg)`
-`*Your caption here*`
+During development I used AI tools as part of a “vibe coding” process to help debug errors and experiment with new p5.js features. This helped me understand how data structures and visual mappings work in creative coding.
 
-*The text inside the square brackets is alt text (a description for accessibility), not a visible caption. To add a caption, place a line of italic text below the image.*
+With more time, I would like to add small icons representing different activities and experiment with animation so that moments appear gradually around the clock. These additions could make the visualization closer to the visual language of my original drawing.
+
+Overall, this project helped me see how a personal dataset can be translated into an interactive visualization, and how coding can function as a creative design tool.
 
 ## AI Usage Statement
 
-*Document any use of AI tools under an AI Usage Statement heading. Explain which tools you used and describe how you used them. Reference any AI-generated content (see [QuickCite](https://auckland.libguides.com/referencing-generative-ai-tools) for guidance).*
+Artificial intelligence (ChatGPT, OpenAI) was used to assist with brainstorming ideas and refining the wording of written sections in this journal entry, including parts of the overview, data collection description, and reflection. The AI tool was used as a language support tool to help organise thoughts and improve clarity of expression.
+
+All data collection, observations, sketches, and the final visualisation were created by the author. The conceptual development, data recording, and visual design decisions were completed independently.
+
+AI assistance was limited to editing, language refinement, and discussion of ideas, and all final content was reviewed and adapted by the author.

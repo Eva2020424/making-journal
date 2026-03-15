@@ -23,14 +23,12 @@ By changing parameters like position, colour, and order of instructions, I obser
 
 Instead of focusing on a single polished composition, I spent some time experimenting with unusual combinations of shapes and parameters (for example I would try to combinate few functions together, or add extreme positions). This produced several unexpected and sometimes very weird visual outcomes. It's quite quirky, but I found it really interesting...
 
-![alt text](../assets/week-01/微信视频2026-03-15_133059_737.mp4)
+![alt text](../assets/week-01/微信图片_20260315141541_406_46.png)
 *Exploring the background() function*
 
 These playful experiments helped me better understand how p5.js renders shapes and how the sequence of commands affects the final composition.
 
 ## Activity 3: Vibe Code an Interactive Sketch
-
-## Activity 3 – Vibe Coding Exploration
 
 During this activity I began experimenting with p5.js by trying to combine different shapes and behaviours in my sketches. However, I frequently encountered errors in the console and some of my code did not run as expected.
 
@@ -44,10 +42,15 @@ As a result, I began experimenting with mouse-based interactions and testing dif
 
 Overall, this process felt very exploratory and playful. Rather than producing a polished final piece, I focused on learning how the system behaves and discovering what kinds of interactive possibilities the code could produce.
 
-![alt text](../assets/week-01/微信视频2026-03-15_133213_802.mp4)
+![alt text](../assets/week-01/微信图片_20260315141435_404_46.png)
 *I created a series of ellipses and then changed their coordinates, replacing them with mouseX and mouseY.*
 
-![alt text](../assets/week-01/微信视频2026-03-15_133232_719.mp4)
+<iframe 
+  src="https://editor.p5js.org/eren841/full/oBzZGhXoi"
+  width="400"
+  height="400">
+</iframe>
+
 *I made this weird dodge ball interactive game using Chatgpt...*
 
 

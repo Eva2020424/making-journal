@@ -23,7 +23,7 @@ By changing parameters like position, colour, and order of instructions, I obser
 
 Instead of focusing on a single polished composition, I spent some time experimenting with unusual combinations of shapes and parameters (for example I would try to combinate few functions together, or add extreme positions). This produced several unexpected and sometimes very weird visual outcomes. It's quite quirky, but I found it really interesting...
 
-![alt text](../assets/week-01/微信图片_20260315144422_410_46.png)
+![alt text](../assets/week-02/image1.png)
 *Exploring the background() function*
 
 These playful experiments helped me better understand how p5.js renders shapes and how the sequence of commands affects the final composition.
@@ -32,7 +32,7 @@ These playful experiments helped me better understand how p5.js renders shapes a
 
 During this activity I began experimenting with p5.js by trying to combine different shapes and behaviours in my sketches. However, I frequently encountered errors in the console and some of my code did not run as expected.
 
-![alt text](../assets/week-01/微信图片_20260315141435_404_46.png)
+![alt text](../assets/week-02/微信图片_20260315141435_404_46.png)
 *I created a series of ellipses and then changed their coordinates, replacing them with mouseX and mouseY.*
 
 To troubleshoot these issues, I started using AI to help identify and fix problems in my code. This allowed me to understand why certain errors were happening and what changes could make the sketch work correctly.
@@ -53,7 +53,7 @@ As a result, I began experimenting with mouse-based interactions and testing dif
 
 I saw some tutorials about sketches, but I wanted to create that nice looking gradient effect, so I explore and ask AI to check on my errors.
 
-![alt text](../assets/week-01/微信图片_20260315145454_36447_61.png)
+![alt text](../assets/week-02/微信图片_20260315145454_36447_61.png)
 
 <iframe 
   src="https://editor.p5js.org/eren841/full/KLYZC4vT0"
@@ -65,7 +65,7 @@ I saw some tutorials about sketches, but I wanted to create that nice looking gr
 
 At this point I'm started to think what if I can create a real sketching board that can change brush colour and an eraser using DOM buttons... So I start trying, this is the result:
 
-![alt text](../assets/week-01/微信图片_20260315150613_411_46.png)
+![alt text](../assets/week-02/微信图片_20260315150613_411_46.png)
 
 <iframe 
   src="https://editor.p5js.org/eren841/full/rcLlDceDd"

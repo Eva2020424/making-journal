@@ -135,3 +135,7 @@ Artificial intelligence (ChatGPT, OpenAI) was used to assist with brainstorming 
 All data collection, observations, sketches, and the final visualisation were created by the author. The conceptual development, data recording, and visual design decisions were completed independently.
 
 AI assistance was limited to editing, language refinement, and discussion of ideas, and all final content was reviewed and adapted by the author.
+
+### AI tool reference
+
+OpenAI. (2024). ChatGPT (GPT-5) [Large language model]. https://chat.openai.com
